@@ -1,0 +1,747 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(
+        180deg,
+        #111 0%,
+        #424242 50%,
+        #111 100%
+    );
+    background-attachment:fixed;
+    color:white;
+    font-family:'Inter', sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 8%;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    font-size:1.8rem;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#d9b96e
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    position:relative;
+    padding:0 20px;
+}
+
+/* PAGE HERO (ZONA SUPERIOR EXCEPTO PORTADA) */
+
+.page-hero{
+    position:relative;
+    height:40vh;
+    background-size:cover;
+    background-position:center;
+}
+
+.page-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+}
+
+.page-hero .hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+    text-align:center;
+    z-index:2;
+}
+
+.page-hero h2{
+    font-family:'Cinzel', serif;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.page-hero p{
+    font-family:'Cinzel', serif;
+    font-size:1.2rem;
+    color:#dddddd;
+}
+/*-*/
+
+.hero-animation{
+    animation:fadeUp 1.2s ease;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero>*{
+    position:relative;
+    z-index:2;
+}
+
+.hero h2{
+    font-size:5.5rem;
+    margin-bottom:40px;
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    letter-spacing:4px;
+    text-shadow:0 5px 20px rgba(0,0,0,.7);
+}
+
+.hero p{
+    font-family:'Cinzel', serif;
+    font-size:1.2rem;
+    max-width:700px;
+    color:#dddddd;
+    line-height:1.8;
+    margin-bottom:35px;
+    text-shadow:0 2px 8px rgba(0,0,0);
+}
+
+.button{
+    display:inline-block;
+    padding:18px 45px;
+    border:2px solid white;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s;
+}
+
+.button:hover{
+    background:white;
+    color:#111;
+    transform:translateY(-4px);
+    box-shadow:0 10px 30px rgba(255,255,255,.25);
+}
+
+nav ul li{
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:700px;
+    margin-left:0%;
+}
+/*
+.featured-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+*/
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.gallery,
+.featured,
+.collection-page,
+.artwork-page,
+.about-content,
+.contact-content{
+    /*background:#181818;*/
+    background:transparent;
+    padding:120px 8%;
+}
+
+/*======================================================
+GALLERY
+======================================================*/
+
+.gallery h2,
+.featured h2{
+    font-family:'Cinzel', serif;
+    font-size:2rem;
+    margin-bottom:60px;
+}
+/*
+.gallery-grid,
+.featured-grid{
+    display:grid;
+    gap:35px;
+}
+
+.gallery-grid{
+    grid-template-columns:repeat(6,1fr);
+}
+*/
+
+.featured-grid{
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+}
+.gallery-grid{
+    grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.gallery-grid,
+.featured-grid{
+    display:grid;
+    gap:35px;
+    align-items:stretch;
+}
+
+.gallery-hero{
+    background-image:url("../images/00_back.jpg");
+}
+
+/*-----TARJETAS------*/
+
+.card{
+    overflow:hidden;
+    border-radius:18px;
+    background:#222;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.featured .card,
+.gallery .card{
+    border:0px solid rgba(255,255,255,0.20);
+    border-radius:18px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    /*transition:box-shadow 0.35s ease, border-color 0.35s ease;*/
+}
+
+.featured .card,
+.gallery .card{
+    position:relative;
+    overflow:hidden;
+    box-shadow:inset 0 0 12px rgba(255,255,255,0.45);
+    /*box-shadow:
+        inset 0 0 15px rgba(255,255,255,0.35),
+        0 0 0 rgba(0,0,0,0);*/
+}
+
+.featured .card::before,
+.featured .card::after,
+.gallery .card::before,
+.gallery .card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:3px;
+    z-index:5;
+    pointer-events:none;
+}
+
+.featured .card::before,
+.gallery .card::before{
+    left:0;
+    background:var(--color1);
+    box-shadow:0 0 20px var(--color1);
+}
+
+.featured .card::after,
+.gallery .card::after{
+    right:0;
+    background:var(--color2);
+    box-shadow:0 0 20px var(--color2);
+}
+/*
+.featured .card::after,
+.gallery .card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:18px;
+    box-shadow:inset 0 0 15px rgba(255,255,255,0.35);
+    pointer-events:none;
+    z-index:10;
+}
+*/
+.featured .card:hover,
+.gallery .card:hover{
+    border-color:rgba(255,255,255,0.7);
+    box-shadow:
+        0 0 8px rgba(255,255,255,0.5),
+        0 0 20px rgba(255,255,255,0.3),
+        0 0 35px rgba(255,255,255,0.15);
+}
+
+.featured .card-info,
+.gallery .card-info{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    min-height:120px;
+}
+.featured .card-info .category,
+.gallery .card-info .category{
+    margin-top:auto;
+}
+
+.card img{
+    width:100%;
+    display:block;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.card-info{
+    padding:25px 25px 10px;
+    text-align:center
+}
+
+.card-info h3{
+    font-family:'Cinzel',serif;
+    font-size:1.0rem;
+    margin-bottom:0px;
+}
+
+.card-info p{
+    margin-top:0px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-size:1.15rem;
+}
+
+.card p{
+    font-family:'Cinzel', serif;
+    color:#d1d1d1;
+    font-size:0.95rem;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card:hover img{
+    transform:scale(1.12);
+}
+
+/* ======================================================
+   ARTWORK PAGE
+====================================================== */
+
+.number,
+.collection,
+.elements,
+.category,
+.created,
+.description{
+    margin-bottom:10px;
+    font-size:1rem;
+    font-family:'Cinzel', serif;
+}
+
+.copyright{
+    font-style: italic;
+}
+
+/* Numero de la obra */
+.number{
+    font-weight:bold;
+}
+
+.number,
+.collection,
+.elements,
+.created{
+    color:#ffffff;
+}
+
+.description{
+    font-style:italic;
+    text-align:justify;
+}
+
+/* Pagina de la obra */
+.artwork-page{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    min-height:100vh;
+}
+
+.artwork-image img{
+    width:80%;
+    border-radius:20px;
+}
+
+.artwork-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.artwork-info h1{
+    font-family:'Cinzel', serif;
+    font-size:3.5rem;
+    max-width:1200px;
+    margin-bottom:-20px;
+    color:rgb(253, 253, 253);
+}
+
+.artwork-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:40px;
+    gap:20px;
+
+}
+
+.artwork-navigation .button{
+    flex:1;
+    text-align:center;
+
+}
+
+.artwork-badges{
+    display:flex;
+    gap:12px;
+    margin:20px 0;
+}
+
+.artwork-badges img{
+    width:60px;
+    height:auto;
+}
+
+/*---ELEMENTOS DE MENU----*/
+
+.element-menu{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:60px;
+}
+
+.element-menu button{
+    background:transparent;
+    color:white;
+    border:1px solid white;
+    padding:10px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.element-menu button img{
+    width:25px;
+    height:25px;
+    object-fit:contain;
+}
+
+.element-menu button:hover{
+    background:white;
+    color:black;
+}
+
+.element-menu button.active{
+    background:white;
+    color:black;
+}
+
+.artwork-count{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:40px;
+    font-size:16px;
+}
+
+/*======================================================
+ABOUT
+======================================================*/
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.about-image img{
+    width:80%;
+    border-radius:20px;
+    display:block;
+    margin-bottom:25px;
+}
+
+.about-hero p{
+    font-size:1.2rem;
+    color:#dddddd;
+}
+
+.about-text{
+    margin-bottom:80px;
+}
+
+.about-text p{
+    font-family:'Cinzel', serif;
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#d6d6d6;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.about-hero{
+    background-image:url("../images/00_back.jpg");
+}
+
+.about-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.about-hero .hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:100%;
+    text-align:center;
+    z-index:2;
+}
+
+.about-hero h2{
+    font-family:'Cinzel', serif;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+/*======================================================
+SERVICES
+======================================================*/
+
+.services{
+    padding:120px 8%;
+    background:#111;
+}
+
+.services h2{
+    font-family:'Cinzel', serif;
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.service-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    transition:.35s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    font-family:'Cinzel', serif;
+    margin-bottom:20px;
+}
+
+.service-card p{
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+/*======================================================
+COLLECTION
+======================================================*/
+
+.collection-hero{
+    background-image:url("../images/00_back.jpg");
+}
+
+.collection-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.collection-hero .hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    text-align:center;
+    z-index:2;
+}
+
+#collection-title{
+    font-family:'Cinzel', serif;
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+#collection-count{
+    text-align:center;
+    font-family:'Cinzel', serif;
+    margin-bottom:50px;
+    color:#aaaaaa;
+    font-size:1rem;
+}
+
+.collection-grid{
+    display:grid;
+    /*grid-template-columns:repeat(21,minmax(0, 1fr));*/
+    grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));
+    gap:15px;
+}
+
+.collection-card{
+    text-align:center;
+}
+
+.collection-card img{
+    width:100%;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+}
+
+.collection-card p{
+    margin-top:8px;
+    font-family:'Cinzel', serif;
+    font-size:.8rem;
+    color:#888;
+}
+
+.collection-card.available{
+    cursor:pointer;
+}
+
+.collection-card.available p{
+    color:white;
+}
+
+.collection-card.available img{
+    transition:.3s;
+}
+
+.collection-card.available:hover img{
+    transform:translateY(-6px);
+}
+
+/*======================================================
+CONTACT
+======================================================*/
+.contact-content{
+    padding:100px 8%;
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.contact-hero{
+    background-image:url("../images/00_back.jpg");
+}
+
+.contact-content h2{
+    font-family:'Cinzel', serif;
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.contact-content p{
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.contact-links{
+    margin-top:50px;
+}
+
+.contact-links p{
+    margin-bottom:35px;
+}
+
+/*======================================================
+FOOTER
+======================================================*/
+
+footer{
+    background:#0d0d0d;
+    padding:30px 8%;
+    text-align:center;
+    color:#888;
+    font-size:.9rem;
+    border-top:1px solid #222;
+}
+
+footer p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
