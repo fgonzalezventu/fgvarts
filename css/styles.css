@@ -57,18 +57,18 @@ nav a:hover{
 
 @media (max-width: 600px) {
     header {
-        padding: 15px 5%;
+        padding: 12px 3%;
     }
     nav h1 {
         font-size: 1rem;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         white-space:nowrap;
     }
     nav ul {
-        gap: 15px;
+        gap: 9px;
     }
     nav a {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         white-space:nowrap;
     }
 }
