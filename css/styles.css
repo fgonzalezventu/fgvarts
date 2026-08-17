@@ -71,6 +71,9 @@ nav a:hover{
         font-size: 0.75rem;
         white-space:nowrap;
     }
+    h2 {
+        font-size: 1.8rem;
+}
 }
 
 
@@ -798,6 +801,8 @@ COLLECTION
 .collection-card.available:hover img{
     transform:translateY(-6px);
 }
+
+
 
 /*======================================================
 CONTACT
