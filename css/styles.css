@@ -62,12 +62,14 @@ nav a:hover{
     nav h1 {
         font-size: 1rem;
         letter-spacing: 1px;
+        white-space:nowrap;
     }
     nav ul {
         gap: 15px;
     }
     nav a {
         font-size: 0.85rem;
+        white-space:nowrap;
     }
 }
 
@@ -504,6 +506,22 @@ GALLERY
         font-size: 2rem;
         max-width:600px;
     }
+    .artwork-info {
+        min-width: 0;
+        max-width: 100%;
+    }
+    .artwork-info p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    .artwork-navigation {
+        gap: 8px;
+        margin-top: 25px;
+    }
+    .artwork-navigation .button {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
 }
 
 /*---ELEMENTOS DE MENU----*/
@@ -672,6 +690,31 @@ SERVICES
 .service-card p{
     color:#cfcfcf;
     line-height:1.8;
+}
+
+@media (max-width: 600px){
+    .services{
+    padding:80px 5%;
+}
+.services h2{
+    font-size:2rem;
+    margin-bottom:40px;
+}
+.services-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+.service-card{
+    padding:20px 12px;
+}
+.service-card h3{
+    font-size:1rem;
+    margin-bottom:12px;
+}
+.service-card p{
+    font-size:0.85rem;
+    line-height:1.5;
+}
 }
 
 /*======================================================
