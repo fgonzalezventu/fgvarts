@@ -80,7 +80,8 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Fire","Earth"],
         created: "December 2020",
-        category: "Spirit"
+        category: "Spirit",
+        description: "By using heat, it is possible to transform earthen minerals into a molten flow that eventually hardens, taking on any desired shape. Thus, they become an amplifier of that incandescent power and a crystal capable of cutting down enemies."
     },
 
     {
