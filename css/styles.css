@@ -16,8 +16,10 @@ body{
     font-family:'Inter', sans-serif;
 }
 
-body > * {
-    background: transparent;
+@media (max-width: 600px) {
+    body {
+        background: #242424;
+    }
 }
 
 header{
@@ -75,13 +77,14 @@ nav a:hover{
         font-size: 0.75rem;
         white-space:nowrap;
     }
-    h2 {
+    /*h2 {
         font-size: 3rem !important;
-}
+}*/
 }
 
 .hero{
     height:100vh;
+    /*height:300px;*/
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -667,7 +670,7 @@ SERVICES
 
 .services{
     padding:120px 8%;
-    background:#111;
+    background:transparent;
 }
 
 .services h2{
