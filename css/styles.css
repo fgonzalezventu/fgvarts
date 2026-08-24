@@ -3,43 +3,17 @@
     padding:0;
     box-sizing:border-box;
 }
-/*
+
 body{
     background:linear-gradient(
         180deg,
         #111 0%,
         #424242 50%,
         #111 100%
-    );
+    ) !important;
     background-attachment:fixed;
     color:white;
     font-family:'Inter', sans-serif;
-}
-*/
-body {
-    background: red !important;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        #111,
-        #424242,
-        #111
-    );
-    pointer-events: none;
-    z-index: 0;
-}
-
-body > * {
-    position: relative;
-    z-index: 1;
 }
 
 header{
@@ -98,7 +72,7 @@ nav a:hover{
         white-space:nowrap;
     }
     h2 {
-        font-size: 2.5rem !important;
+        font-size: 3rem !important;
 }
 }
 
@@ -238,9 +212,17 @@ nav ul li{
 .artwork-page,
 .about-content,
 .contact-content{
-    /*background:#181818;*/
     background:transparent;
+    /*background: red !important;*/
     padding:120px 8%;
+}
+
+@media (max-width: 600px) {
+    .featured h2,
+    .gallery h2,
+    .collection-page h2 {
+        font-size: 2rem !important;
+    }
 }
 
 /*======================================================
