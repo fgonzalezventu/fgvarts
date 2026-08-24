@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
-
+/*
 body{
     background:linear-gradient(
         180deg,
@@ -15,6 +15,27 @@ body{
     color:white;
     font-family:'Inter', sans-serif;
 }
+*/
+body{
+    background:#111;
+    color:white;
+    font-family:'Inter', sans-serif;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        #111 0%,
+        #424242 50%,
+        #111 100%
+    );
+    z-index:-1;
+    pointer-events:none;
+}
+
 
 header{
     position:fixed;
