@@ -16,12 +16,6 @@ body{
     font-family:'Inter', sans-serif;
 }
 
-@media (max-width: 600px) {
-    body {
-        background: #242424;
-    }
-}
-
 header{
     position:fixed;
     top:0;
@@ -77,9 +71,9 @@ nav a:hover{
         font-size: 0.75rem;
         white-space:nowrap;
     }
-    /*h2 {
-        font-size: 3rem !important;
-}*/
+    h2 {
+        font-size: 3.5rem !important;
+}
 }
 
 .hero{
