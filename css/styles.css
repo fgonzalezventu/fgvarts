@@ -10,10 +10,14 @@ body{
         #111 0%,
         #424242 50%,
         #111 100%
-    ) !important;
+    );
     background-attachment:fixed;
     color:white;
     font-family:'Inter', sans-serif;
+}
+
+body > * {
+    background: transparent;
 }
 
 header{
