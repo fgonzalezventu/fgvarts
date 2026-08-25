@@ -24,7 +24,11 @@ const container = document.getElementById("artwork-container");
 container.innerHTML = `
     <section class="artwork-page">
         <div class="artwork-image">
+
+            
             <img src="images/art/${artwork.image}" alt="${artwork.title}">
+
+
         </div>
         <div class="artwork-info">
             <h1 class="card-title">${artwork.title}</h1>

@@ -76,9 +76,15 @@ nav a:hover{
         font-size: 0.75rem;
         white-space:nowrap;
     }
-    h2 {
-        font-size: 3.5rem !important;
-}
+    /*h2 {
+        font-size: 3rem !important;
+    }*/
+    .page-hero h2 {
+        font-size:2.5rem !important;
+    }
+    .hero h2 {
+        font-size:4rem !important;    
+    }
 }
 
 .hero{
@@ -228,6 +234,16 @@ nav ul li{
     .gallery h2,
     .collection-page h2 {
         font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery,
+    .featured,
+    .collection-page,
+    .about-content,
+    .contact-content{
+        padding-top:60px;
     }
 }
 
@@ -435,13 +451,21 @@ GALLERY
     display:grid;
     grid-template-columns:1fr 1fr;
     /*gap:60px;*/
+    overflow-anchor: none;
     min-height:100vh;
+}
+
+.artwork-image{
+    text-align:center;
 }
 
 .artwork-image img{
     width:80%;
     border-radius:20px;
-    animation: artworkZoom 0.7s ease-out;
+    display:block;
+    margin:auto;
+    animation:artworkZoom 0.7s ease-out forwards;
+    transform-origin:center center;
 }
 
 .artwork-info{
@@ -464,7 +488,6 @@ GALLERY
     align-items:center;
     margin-top:40px;
     gap:20px;
-
 }
 
 .artwork-navigation .button{

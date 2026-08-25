@@ -69,7 +69,7 @@ const artworks = [
         elements: ["Instinct","Poison"],
         created: "December 2021",
         category: "Power",
-        description: "Thorns are one of nature's most silent and lethal weapons. Not only can they pierce the toughest, most resilient skin, but they can also poison your body with no chance of escape, a prison within yourself."
+        description: "Thorns are one of nature's sharpest and lethal weapons. Not only can they pierce the toughest, most resilient skin, but they can also poison your body with no chance of escape, a prison within yourself."
     },
 
     {
@@ -81,7 +81,7 @@ const artworks = [
         elements: ["Fire","Earth"],
         created: "December 2020",
         category: "Spirit",
-        description: "By using heat, it is possible to transform earthen minerals into a molten flow that eventually hardens, taking on any desired shape. Thus, they become an amplifier of that incandescent power and a crystal capable of cutting down enemies."
+        description: "Fire turned to crystal; earth transformed into a reflection of the sky. Through heat, earthen minerals can be transmuted into a molten flow, creating an amplifier of that incandescent power and a blade's edge to cut down one's enemies."
     },
 
     {
@@ -314,7 +314,8 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Water","Air"],
         created: "October 2020",
-        category: "Spirit"
+        category: "Spirit",
+        description: "Behold the relentless frost and the desolate cold. There will be no warning; when fate decrees it, it will extinguish the very last remnant of warmth from your body, burying your name beneath its frozen tomb."
     },
 
     {
@@ -413,7 +414,8 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Poison","Nature"],
         created: "January 2021",
-        category: "Spirit"
+        category: "Spirit",
+        description: "It lies in wait amidst a deathly silence, a motionless shadow that defies time. When its trap snaps shut, it seizes absolute control of the victim's mind, eradicating their consciousness. There is no salvation; once you succumb, you cease to exist."
     },
 
     {
