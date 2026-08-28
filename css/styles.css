@@ -227,6 +227,7 @@ nav ul li{
     background:transparent;
     /*background: red !important;*/
     padding:120px 8%;
+    padding-bottom:40px;
 }
 
 @media (max-width: 600px) {
@@ -460,7 +461,7 @@ GALLERY
 }
 
 .artwork-image img{
-    width:80%;
+    width:75%;
     border-radius:20px;
     display:block;
     margin:auto;

@@ -104,7 +104,8 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Fire","Poison"],
         created: "April 2023",
-        category: "Spirit"
+        category: "Spirit",
+        description: "Though it is a bitter and toxic spirit, it has bestowed happiness and delirium upon generations, creating sweet, frenetic realities that come crashing down the next morning. That nature mirrors its flammability, which flares up at the slightest spark."
     },
 
     {
