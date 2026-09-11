@@ -116,7 +116,8 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Fire","Metal"],
         created: "September 2022",
-        category: "Spirit"
+        category: "Spirit",
+        description: "The colossus of volcanoes has the power to incinerate everything in its path, meting out a slow yet certain doom. Its fury extends even further as it hurls projectiles of rock and incandescent matter, capable of annihilating anything at will."
     },
 
     {
@@ -570,6 +571,17 @@ const artworks = [
         collection: "Spirits of the Universe",
         elements: ["Air"],
         created: "April 2026",
+        category: "Prime Spirit"
+    },
+
+    {
+        id:207,
+        title: "Zahar, Poison Prime Spirit",
+        image: "207 veneno.jpg",
+        number: "207 / 357",
+        collection: "Spirits of the Universe",
+        elements: ["Poison"],
+        created: "September 2026",
         category: "Prime Spirit"
     },
 
