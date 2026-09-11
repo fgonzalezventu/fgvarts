@@ -5,7 +5,8 @@ const heroImages = [
     "ban03.jpg",
     "ban04.jpg",
     "ban05.jpg",
-    "ban06.jpg"
+    "ban06.jpg",
+    "ban07.jpg"
 ];
 
 const elementColors = {
