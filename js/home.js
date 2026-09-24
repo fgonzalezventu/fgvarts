@@ -10,23 +10,23 @@ const heroImages = [
 ];
 
 const elementColors = {
-    Fire:       "rgba(230, 57, 70, 0.5)",
-    Earth:      "rgba(190, 82, 43, 0.5)",
-    Electricity:"rgba(245, 213, 71, 0.5)",
-    Nature:     "rgba(76, 175, 80, 0.5)",
-    Water:      "rgba(33, 150, 243, 0.5)",
-    Air:        "rgba(184, 224, 255, 0.5)",
-    Poison:     "rgba(156, 39, 176, 0.5)",
-    Metal:      "rgba(158, 158, 158, 0.5)",
-    Guardian:   "rgba(96, 125, 139, 0.5)",
-    Beast:      "rgba(121, 85, 72, 0.5)",
-    Intellect:  "rgba(63, 81, 181, 0.5)",
-    Instinct:   "rgba(255, 152, 0, 0.5)",
-    Science:    "rgba(0, 188, 212, 0.5)",
-    Alchemy:    "rgba(139, 195, 74, 0.5)",
-    Light:      "rgba(255, 241, 118, 0.5)",
-    Darkness:   "rgba(74, 20, 140, 0.5)",
-    Divine:     "rgba(255, 251, 4, 0.8)"
+    Fuego:       "rgba(230, 57, 70, 0.5)",
+    Tierra:      "rgba(190, 82, 43, 0.5)",
+    Electro:     "rgba(245, 213, 71, 0.5)",
+    Natural:     "rgba(76, 175, 80, 0.5)",
+    Agua:        "rgba(33, 150, 243, 0.5)",
+    Aire:        "rgba(184, 224, 255, 0.5)",
+    Veneno:      "rgba(156, 39, 176, 0.5)",
+    Metal:       "rgba(158, 158, 158, 0.5)",
+    Guardián:    "rgba(96, 125, 139, 0.5)",
+    Bestia:      "rgba(121, 85, 72, 0.5)",
+    Intelecto:   "rgba(63, 81, 181, 0.5)",
+    Instinto:    "rgba(255, 152, 0, 0.5)",
+    Ciencia:     "rgba(0, 188, 212, 0.5)",
+    Alquimia:    "rgba(139, 195, 74, 0.5)",
+    Luz:         "rgba(255, 241, 118, 0.5)",
+    Oscuridad:   "rgba(74, 20, 140, 0.5)",
+    Divino:      "rgba(255, 251, 4, 0.8)"
 };
 
 const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)];

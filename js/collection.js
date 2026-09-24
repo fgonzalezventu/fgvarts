@@ -40,4 +40,4 @@ for(let id = 1; id <= totalArtworks; id++){
 
 // Contador superior
 document.getElementById("collection-count").textContent =
-`${published} / ${totalArtworks} artworks published`;
+`${published} / ${totalArtworks} ilustraciones publicadas`;

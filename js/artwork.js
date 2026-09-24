@@ -47,8 +47,8 @@ container.innerHTML = `
             <p class="number">${artwork.number}</p>
             <p class="collection">${artwork.collection}</p>
             <p class="elements">${artwork.elements.join(" x ")}</p>
-            <p class="category"> Category: ${artwork.category}</p>
-            <p class="created"> Created: ${artwork.created}</p>
+            <p class="category"> Categoria: ${artwork.category}</p>
+            <p class="created"> Creado: ${artwork.created}</p>
             <p class="description">${artwork.description}</p>
             <div class="artwork-navigation">
                 ${previousArtwork
