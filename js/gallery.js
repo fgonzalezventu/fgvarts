@@ -25,7 +25,7 @@ const elementColors = {
 function showArtworks(artworksToShow){
     gallery.innerHTML = "";
     artworkCount.textContent = 
-        `Showing ${artworksToShow.length} artworks`;
+        `Mostrando ${artworksToShow.length} ilustraciones`;
     artworksToShow.forEach(artwork => {
 
         const color1 = elementColors[artwork.elements[0]] || "#111";

@@ -50,7 +50,7 @@ const artworks = [
 
     {
         id:73,
-        title: "Pak-Shaghat, Poder de Parálisis Power",
+        title: "Pak-Shaghat, Poder de Parálisis",
         image: "073 paralisis.jpg",
         number: "073 / 357",
         collection: "Espíritus del Universo",
