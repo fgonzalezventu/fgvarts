@@ -191,6 +191,17 @@ const artworks = [
     },
 
     {
+        id:129,
+        title: "Sharkara, Espíritu de Azúcar",
+        image: "129 azucar.jpg",
+        number: "129 / 357",
+        collection: "Espíritus del Universo",
+        elements: ["Electro","Natural"],
+        created: "Octubre 2026",
+        category: "Espíritu"
+    },
+
+    {
         id:130,
         title: "Namak, Espíritu de Sal",
         image: "130 sal.jpg",
