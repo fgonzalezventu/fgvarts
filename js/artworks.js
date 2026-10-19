@@ -165,7 +165,7 @@ const artworks = [
         elements: ["Tierra","Aire"],
         created: "Febrero 2021",
         category: "Espíritu",
-        description: "Los pequeños granos que conforman la arena viajan sin cesar de orilla en orilla, esperando a llegar al lugar que siempre han añorado. Sin embargo, cuando se elevan en el viento, son capaces de sepultar hasta el más temible de los enemigos."
+        description: "Los pequeños granos que conforman su ser viajan sin cesar de orilla en orilla, esperando llegar al lugar que siempre han añorado. Sin embargo, cuando se elevan al viento, son capaces de sepultar hasta el más temible de los enemigos."
     },
 
     {
@@ -176,7 +176,8 @@ const artworks = [
         collection: "Espíritus del Universo",
         elements: ["Tierra","Metal"],
         created: "Diciembre 2022",
-        category: "Espíritu"
+        category: "Espíritu",
+        description: "Los minerales que encarnan la belleza y el valor de las piedras más codiciadas. Representan la riqueza y la opulencia de quienes las ostentan, pero también la fragilidad y la vulnerabilidad de lo que se considera valioso."
     },
    
     {
